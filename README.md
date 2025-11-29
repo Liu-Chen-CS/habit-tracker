@@ -1,8 +1,8 @@
-# 🎯 Habit Tracker
+# Habit Tracker
 
 A modern habit tracking application built with Flask + React + TypeScript.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 habbit/
@@ -20,9 +20,9 @@ habbit/
 └── README.md
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
-### 1️⃣ Start Backend (Flask)
+### Start Backend (Flask)
 
 ```bash
 # Navigate to backend directory
@@ -37,7 +37,7 @@ python3 app.py
 
 Backend will start at `http://127.0.0.1:5000`
 
-### 2️⃣ Start Frontend (React)
+### Start Frontend (React)
 
 Open a new terminal window:
 
@@ -54,24 +54,24 @@ npm run dev
 
 Frontend will start at `http://localhost:5173`
 
-## ✨ Features
+## Features
 
-- ✅ Add habits (daily/weekly)
-- ✅ Mark as complete
-- ✅ Track consecutive day streaks
-- ✅ Calculate completion rate
-- ✅ Delete habits
-- ✅ Beautiful modern UI
-- ✅ Complete error handling
+- Add habits (daily/weekly)
+- Mark as complete
+- Track consecutive day streaks
+- Calculate completion rate
+- Delete habits
+- Beautiful modern UI
+- Complete error handling
 
-## 🎮 How to Use
+## How to Use
 
 1. **Add Habit**: Enter habit name in the "Add New Habit" section, select frequency, and click Add
 2. **Mark Complete**: Click the "✓ Complete" button to mark today as done
 3. **View Stats**: Each habit card displays streak count and completion rate
 4. **Delete Habit**: Click the "🗑️" button to delete (confirmation required)
 
-## 📊 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Function |
 |--------|----------|----------|
@@ -82,7 +82,7 @@ Frontend will start at `http://localhost:5173`
 | GET | `/api/habits/<id>/stats` | Get statistics |
 | GET | `/api/habits/<id>/records` | Get completion records |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Backend:**
 - Python 3.9+
@@ -95,61 +95,3 @@ Frontend will start at `http://localhost:5173`
 - TypeScript
 - Vite
 - Axios
-
-## 📝 Database Schema
-
-### Habits Table
-- `habit_id`: Primary key
-- `name`: Habit name
-- `frequency`: Frequency (daily/weekly)
-- `creation_date`: Creation timestamp
-
-### Records Table
-- `record_id`: Primary key
-- `habit_id`: Foreign key to Habits
-- `completion_time`: Completion timestamp
-
-## 🔧 Troubleshooting
-
-### Frontend can't connect to backend?
-Make sure backend is running at `http://127.0.0.1:5000`
-
-### pip command not found?
-Use `pip3` or `python3 -m pip`
-
-### Port already in use?
-Change port in `backend/app.py` or kill the process:
-```bash
-lsof -i :5000
-kill -9 <PID>
-```
-
-## 📦 Deployment Suggestions
-
-**Backend:**
-- Use Gunicorn + Nginx
-- Migrate to PostgreSQL (production)
-- Add environment variable configuration
-
-**Frontend:**
-- Build: `npm run build`
-- Deploy to Vercel/Netlify/CDN
-
-## 🎨 Future Enhancements
-
-- [ ] User authentication system
-- [ ] Data visualization charts
-- [ ] Daily reminder notifications
-- [ ] Data export (JSON/CSV)
-- [ ] Dark mode
-- [ ] Mobile optimization
-- [ ] Habit category tags
-- [ ] Habit notes feature
-
-## 📄 License
-
-MIT License
-
----
-
-**Developer**: Built for those who love self-improvement 💪
